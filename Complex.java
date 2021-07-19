@@ -49,6 +49,10 @@ public class Complex{
             //Return the Complex value.
         }
     }
-	
-
+	public static void print(Complex a){
+	    //To print a complex number
+	    System.out.print(a.Real+"+i"+a.Imaginary);
+	}
+    
+   
 }
