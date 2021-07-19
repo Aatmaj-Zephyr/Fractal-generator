@@ -7,3 +7,4 @@ The main.java makes references to all the subclasses and runs the methods polymo
 
 Complex numbers class is made to support the 2d argand plane. This was needed as Java doesn't directly and easily support the complex numbers like Python, Julia and other modern languages. It also was a good exercise and gave a lot of flexibility. This helped me clearly understand object oriented concepts like returning objects and static methods.
 
+Check out the flowchart folder for learning more about the class hierchy!
