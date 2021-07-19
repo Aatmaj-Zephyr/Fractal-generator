@@ -57,7 +57,7 @@ public abstract class Fractal
 	        for (int j=-Range;j<=Range;j++){
 	            Complex z= new Complex(i/1,j/1);
 	            if(Hashtable.IsPresent(z)){
-	                System.out.print("*");
+	                System.out.print(Dot);
 	            }
 	            else{
 	                System.out.print(" ");
