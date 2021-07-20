@@ -45,6 +45,11 @@ public class hashtable{
             Complex a=(Complex) (hasharray.get(key).get(i));
             if(a.Real==z.Real&a.Imaginary==z.Imaginary){
                 //If the two complex numbers are equal
+                /*
+                Note- Two complex objects can be equated by overriding the hashcode() and the equals() methods which are inherited from the object.
+                This will requirs to make an array of size 2 with real and imaginary values in addition to the variables or instead of the variableds to compare to equate the hashvaueshashcode. But instead the above method is quite simpler. 
+                Yes, for more dimentional values, eg. 4D,5D,6D etc making an array will be more efficient.
+                */
                 return true;
             }    
         }
