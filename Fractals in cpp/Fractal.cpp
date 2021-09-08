@@ -9,6 +9,7 @@
 using namespace std;
 
 struct complexfractal {
+    //Make a struct named complex fractal. This is to make complex numbers in cpp. The complex numnbersd are interpreted as a seperate object class.
   double x, y, absolute_value;
   fractal() {
     x = 0;
@@ -32,11 +33,12 @@ struct complexfractal {
     }
     return absolut(x, y);
   }
-  void calculate(double z_x, double z_y, double initial_x, double initial_y) {
+  void calculate(double z_x, double z_y, double initial_x, double initial_y) { //Calculate ths distance between two complex numbers.
     x = (z_x) * (z_x) - (z_y) * (z_y) + initial_x; //z=z^2+
     y = 2 * z_x * z_y + initial_y;
   }
   double absolut(double z_x, double z_y) {
+      //absolute value of a complex number.
     return sqrt((z_x) * (z_x) + z_y * (z_y));
   }
 };
@@ -60,7 +62,7 @@ int main() {
       a.x = 0;
       a.y = 0;
       if (a.compute(length, x, y, endlmt) < endlmt) {
-
+//fractal algorithm
         //fout<<"*";
         cout << "*";
       } else {
