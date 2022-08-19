@@ -1,5 +1,5 @@
 # Fractal-generator
-Fractal generator using the Chaos game. This is a program which makes use of Object Oriented programming. Fractals like Seirpinski triangle, Seirpinski Carpet, Vicsek fractal, etc are generated using the 'Chaos Game' using simple keyboard symbols like star (*) dot (.) alphabets (o) etc
+Fractal generator using the [Chaos game](https://en.wikipedia.org/wiki/Chaos_game). This is a program which makes use of Object Oriented programming. Fractals like Seirpinski triangle, Seirpinski Carpet, Vicsek fractal, etc are generated using the 'Chaos Game' using simple keyboard symbols like star (*) dot (.) alphabets (o) etc
 ____
 The program makes a hierchy of two classes, abstract Fractal.java and it's sub-classes. In the sub classes, methods to set the initial corners and to make a hashtable of coordinates generated from the Chaos game are present. The fractal superclass contains methods to print the hashtable as a coordinate graph on the command line, normalize the values in  a given range, etc. 
 
