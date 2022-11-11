@@ -11,7 +11,7 @@ using namespace std;
 struct complexfractal {
     //Make a struct named complex fractal. This is to make complex numbers in cpp. The complex numnbersd are interpreted as a seperate object class.
   double x, y, absolute_value;
-  fractal() {
+  complexfractal() {
     x = 0;
     y = 0;
   }
@@ -27,14 +27,14 @@ struct complexfractal {
         }
 
       } else {
-        cout << absolut(x, y);
         return 10;
       }
     }
     return absolut(x, y);
   }
-  void calculate(double z_x, double z_y, double initial_x, double initial_y) { //Calculate ths distance between two complex numbers.
-    x = (z_x) * (z_x) - (z_y) * (z_y) + initial_x; //z=z^2+
+  void calculate(double z_x, double z_y, double initial_x, double initial_y) {
+      //Calculate ths distance between two complex numbers.
+    x = (z_x) * (z_x) - (z_y) * (z_y) + initial_x; //z=z^2+C
     y = 2 * z_x * z_y + initial_y;
   }
   double absolut(double z_x, double z_y) {
@@ -47,11 +47,11 @@ int main() {
   ofstream fout;
   fout.open("fractal.txt");
   double endlmt = 2.0;
-  int length = 50;
-  int x_rightlimit = 50;
-  int x_leftlimit = -20;
-  int y_rightlimit = 10;
-  int y_leftlimit = -10;
+  int length = 500;
+  int x_rightlimit = 500;
+  int x_leftlimit = -200;
+  int y_rightlimit = 100;
+  int y_leftlimit = -100;
   int lr = 10;
   int x, y;
   for (int iy = y_leftlimit; iy < y_rightlimit; iy++) {
@@ -63,15 +63,12 @@ int main() {
       a.y = 0;
       if (a.compute(length, x, y, endlmt) < endlmt) {
 //fractal algorithm
-        //fout<<"*";
-        cout << "*";
+        fout<<"*";
       } else {
-        //fout<<" ";
-        cout << " ";
+        fout<<" ";
       }
-      //fout<<"\n";
     }
-    cout << "\n";
+    fout<<"\n";
   }
   return 0;
 }
