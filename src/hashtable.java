@@ -62,9 +62,9 @@ public class hashtable {
     for (int i = 0; i <= length; i++) {
       for (int j = 0; j < hasharray.get(i).size(); j++) {
         Complex.print((Complex) (hasharray.get(i).get(j))); // Cast object to omplex
-        System.out.print(" ");
+        Writer.write(" ");
       }
-      System.out.println();
+      Writer.write("\n");
     }
   }
 }

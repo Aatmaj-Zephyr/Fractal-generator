@@ -54,18 +54,18 @@ public abstract class Fractal
     /*test code.
     //Hashtable.show();
     //Hashtable.Add(new Complex(0,0));
-    //System.out.println(Hashtable.IsPresent(new Complex(0,0)));
+    //Writer.writeln(Hashtable.IsPresent(new Complex(0,0)));
     */
     for (int i = -Range; i <= Range; i++) {
       for (int j = -Range; j <= Range; j++) {
         Complex z = new Complex(i / 1, j / 1);
         if (Hashtable.IsPresent(z)) {
-          System.out.print(Dot);
+          Writer.write(Dot);
         } else {
-          System.out.print(" ");
+          Writer.write(" ");
         }
       }
-      System.out.println();
+      Writer.write("\n");
     }
   }
 

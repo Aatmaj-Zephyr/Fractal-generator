@@ -52,6 +52,6 @@ public class Complex {
 
   public static void print(Complex a) {
     // To print a complex number for debugging
-    System.out.print(a.Real + "+i" + a.Imaginary);
+    Writer.write(a.Real + "+i" + a.Imaginary);
   }
 }
